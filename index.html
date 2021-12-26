@@ -22,41 +22,130 @@ User Story #14: My product landing page should have at least one media query.
 User Story #15: My product landing page should utilize CSS flexbox at least once.
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrainerRoadLandingPage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Quicksand&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div id="container">
-        <header id="header">
-            <img id="header-img" src="https://kgrochot.github.io/LandingPageTRmyVersion/trainerroad-logo.png"
+<header id="header" class="masthead">
+    <nav id="nav-bar">
+     <li> <img id="logo-img" src="https://kgrochot.github.io/LandingPageTRmyVersion/TRlogo.png"
+               alt="TrainerRoadLogo" /></li>
+        <li class="navlink"><a href="#coach" class="nav-link">Ask a Coach </a></li>
+        <li class="navlink"><a href="#tryIt" class="nav-link">Try it </a></li>
+        <li class="navlink"><a href="#contactUs" class="nav-link"> Contact us</a></li>
+    </nav>
+
+    <section class="twins">
+        <div class="twin">
+            <img id="header-img" src="https://kgrochot.github.io/LandingPageTRmyVersion/TRheader.jpg"
                 alt="TrainerRoadLogo" />
-                <nav id="nav-bar">
-                    <a href="#blog" class="nav-link">Blog</a>
-                    <a href="#tryIt" class="nav-link">Try it</a>
-                    <a href="#contactUs" class="nav-link">Contact us</a>
-                </nav>
-        </header>
+        </div>
 
-        <section id="blog">
+        <div id="tryIt" class="twin">
+            <iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/2JTykBBT8lY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
 
-        </section>
-        <section id="tryIt">
+</header><!-- .masthead -->
 
-        </section>
-        <section id="contactUs">
-            
-        </section>
-    </div>
-</body>
+<main id="content" class="main-area">
+    <section class="splash grid">
+        <div class="splash-content">
+            <h2 class="content-title">Your indoor cycling setup doesn’t need to be glamorous.</h2>
+            <div class="splash-text">
+                <p> Train, plan, and analyze your indoor cycling performance with the TrainerRoad cycling training app.
+                    With unique in-app features like Plan Builder, TrainNow, and the TrainerRoad Calendar, the
+                    TrainerRoad app has everything you need to get faster. Available for iOS, Android, Mac, and Windows
+                    Devices, the TrainerRoad app is compatible with a variety of devices and training equipment.</p>
+            </div><!-- .splash-text -->
+        </div><!-- .splash-content -->
+    </section><!-- .splash -->
 
-</html>
+    <section class="buckets">
+        <ul>
+            <li>
+                <img src="https://kgrochot.github.io/LandingPageTRmyVersion/cooling-fans-for-cycling-indoors.jpg"
+                    alt="cooling-fans-for-cycling-indoors">
+                <div class="bucket">
+                    <h3 class="bucket-title">Fans and Cooling</h3>
+                    <p>Riding inside means that you won’t get the benefit of the natural airflow you’d get outside. One
+                        of the biggest and most frequent mistakes we see in indoor setups is a lack of cooling. To
+                        prevent overheating, use a fan that can blow a concentrated airstream at the body’s core. A
+                        blower-style fan is a better choice than a box fan because it puts out a tremendous amount of
+                        air in a focused stream.</p>
+                </div><!-- .bucket -->
+            </li>
+            <li>
+                <img src="https://kgrochot.github.io/LandingPageTRmyVersion/headphoneTR.jpg" alt="headphone">
+                <div class="bucket">
+                    <h3 class="bucket-title">Entertainment Accessories</h3>
+                    <p>Whether you like to listen to music or watch a show while you train indoors, a great set of
+                        headphones can seriously improve your experience. For longevity, you’ll want a pair that has an
+                        IPX4 rating for water and sweat resistance. If you’re a heavy sweater, you’ll want something
+                        with a higher rating. Additionally, active noise cancellation is another nice feature to block
+                        fan noise so you can listen to your entertainment. Some of our personal favorites are the Apple
+                        Airpods Pro, Beats Fit Pro, and Jaybird Vista 2.</p>
+                </div><!-- .bucket -->
+            </li>
+            <li>
+                <img src="https://kgrochot.github.io/LandingPageTRmyVersion/sweetGuardTowel.jpg" alt="sweetGuardTowel">
+                <div class="bucket">
+                    <h3 class="bucket-title">Sweat Guard and Towels</h3>
+                    <p>Even with your cooling dialed in, you’ll probably still work up a good sweat during a workout,
+                        and the stem and headset take the brunt of your hard work. Over time, sweat can corrode bolts,
+                        bearings, and expensive components. To help prevent sweat from getting there in the first place,
+                        a simple sweat guard is very effective. These types of sweat guards loop around the seat post
+                        and then attach to the handlebars.</p>
+
+                </div><!-- .bucket -->
+            </li>
+        </ul>
+    </section><!-- .buckets -->
+
+    <section class="more splash">
+        <div class="more-content">
+            <h2 class="content-title">Ready to Get Faster?</h2>
+            <div class="splash-text">
+                <p>Use science-based planning, training and analysis tools to increase your performance with cycling’s
+                    most effective training system.</p>
+            </div>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" class="form-example">
+                <input id="email" type="email" placeholder="Your email address" name="email" />
+                <input id="submit" type="submit" value="Join Us" />
+                <p id="guarantee">30 Days Risk-Free guarantee</p>
+            </form>
+        </div><!-- .more-content -->
+    </section><!-- .more -->
+
+    <section class="twins grid">
+        <div class="twin">
+            <h2 class="content-title" id="coach">Ask a Cycling Coach
+            </h2>
+            <p>This is the only podcast dedicated to making you a faster cyclist. Each week, Coach Chad, Amber Pierce,
+                Coach Jonathan and Nate Pearson answer your cycling and triathlon questions.</p>
+        </div>
+        <div class="twin">
+            <h2 class="content-title">The Most Complete Training System
+            </h2>
+            <p>Whatever <em>you</em> want to achieve in cycling, TrainerRoad has the tools to get you there. No other
+                app offers as many advanced features in such an easy-to-use interface.</p>
+        </div>
+    </section><!-- .twins -->
+</main>
+
+<footer class="colophon grid">
+    <aside>Content, layout, design: <a href="https://github.com/kgrochot/LandingPageTRmyVersion" target="_blank"
+            rel="nofollow">Katarzyna Grochot</a>.</aside>
+    <aside id="contactUs"><a href="https://support.trainerroad.com/hc/en-us" target="_blank" rel="nofollow">Contact Us
+        </a>
+        -> If you've got a question, we have an answer.</aside>
+</footer>
